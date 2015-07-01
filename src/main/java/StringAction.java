@@ -1,12 +1,7 @@
-
 public class StringAction extends Action<String> {
-    @Override
-    public String function(String a, String b, int action) throws Exception {
-        switch (action) {
-            case 0:
-                return a + b;
-        }
 
-        throw new Exception("Wrong action: " + action + ". Available action 0.");
+    @Override
+    protected String function(String a, String b) throws Exception {
+        return a + b;
     }
 }
